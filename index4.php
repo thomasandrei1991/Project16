@@ -34,9 +34,8 @@
         $stmt = $pdo->query("SELECT id, username FROM users ORDER BY id DESC");
         // ↑ change to ↓ if you already added created_at column
         // $stmt = $pdo->query("SELECT id, username, created_at FROM users ORDER BY id DESC");
-        
         $users = $stmt->fetchAll();
-    } 
+    }
     catch (PDOException $e) {
         $message .= "<br>Select error: " . $e->getMessage();
     }
@@ -46,23 +45,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>User List</title>
-        <style>
-            body { font-family: sans-serif; margin: 2rem; }
-            .message { padding: 1rem; background: #fff3cd; border: 1px solid #ffeeba; border-radius: 6px; margin-bottom: 1.5rem; }
-            table { border-collapse: collapse; width: 100%; max-width: 500px; }
-            th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
-            th { background: #f8f9fa; }
-        </style>
+        <link rel="stylesheet" href="index4.css">
+        <title>DB Connection Tutorial</title>
     </head>
     <body>
-
         <h1>Users</h1>
-
         <?php if ($message): ?>
             <div class="message"><?= $message ?></div>
         <?php endif; ?>
-
         <?php if ($users): ?>
             <table>
                 <thead>
