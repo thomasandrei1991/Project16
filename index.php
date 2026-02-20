@@ -23,6 +23,7 @@
             <?php
                 echo greetUser();
                 echo "<br> Monthly Salary : ".calculateAnnualSalary($monthlysalary);
+                echo "Testing";
             ?>
         </h1>
     </body>
