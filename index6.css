@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background: #f2f2f2;
+    background: lightgray;
     font-family: 'Poppins', sans-serif;
 }
 h3{
@@ -17,7 +17,14 @@ li{
     font-size: 18px;
     color: white;
 }
-.body-container{
+nav{
+    background-color: green;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: white;
+}
+.food-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,6 +41,7 @@ li{
     background-color: lawngreen;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    font-weight: bold;
 }
 
 .vegetable-container{
@@ -46,4 +54,29 @@ li{
     background-color: lawngreen;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+.rootcrop-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    background-color: lawngreen;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+.peanut-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    background-color: lawngreen;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    font-weight: bold;
 }
