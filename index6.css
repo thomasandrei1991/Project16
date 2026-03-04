@@ -1,172 +1,99 @@
-/*------------- Custom Layut Design --------------- */
-*{
+/* Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background: lightgray;
+
+body {
     font-family: 'Poppins', sans-serif;
-}
-h3{
-    font-size: 20px;
-    color:white;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 20px;
-}
-ul{
-    font-size: 20px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-nav{
-    background-color: darkgray;
-    padding: 20px;
-    text-align: left;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    color: white;
-}
-
-/* ------------- Food Section ---------------*/
-.food-section{
-    display: flex;
-    justify-content: center;       /* horizontal centering of children */
-    align-items: center;           /* vertical centering of children */
-    min-height: 300px;             /* ← give it more breathing room */
-    width: 100%;                   /* ← let it take full width */
-    max-width: 1100px;             /* ← but don't stretch forever */
-    margin: 20px auto;             /* ← center the whole section horizontally */
-    background-color: lightgreen;
-    border-radius: 20px;
+    background: linear-gradient(135deg, #dfe9f3, #ffffff);
     padding: 30px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
-}
-.food-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;                     /* reduced from 50px – looks better on smaller screens */
-    flex-wrap: wrap;
-}
-.fruit-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 250px;
-    width: 200px;
-    background-color: lawngreen;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-    font-weight: bold;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.vegetable-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 250px;
-    width: 200px;
-    background-color: lawngreen;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-    font-weight: bold;
-}
-.rootcrop-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 250px;
-    width: 200px;
-    background-color: lawngreen;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-    font-weight: bold;
-}
-.peanut-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 250px;
-    width: 200px;
-    background-color: lawngreen;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-    font-weight: bold;
+/* Navbar */
+nav {
+    background: #111;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
 }
 
-/* ------------- Electronics Section ---------------*/
+/* Section */
+.section {
+    margin-bottom: 60px;
+}
 
-.electronics-section{
-    display: flex;
-    justify-content: center;       
-    align-items: center;           
-    min-height: 300px;             
-    width: 100%;                   
-    max-width: 1100px;            
-    margin: 20px auto;             
-    background-color: aquamarine;
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+.section h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #333;
 }
-.gadget-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;                     /* reduced from 50px – looks better on smaller screens */
-    flex-wrap: wrap;
+
+/* Grid Layout */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
 }
-.tv-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 250px;
-    width: 225px;
-    background-color: teal;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-    font-weight: bold;
+
+/* Card */
+.card {
+    background: linear-gradient(145deg, #ffffff, #f1f1f1);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
-.cellphone-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 250px;
-    width: 225px;
-    background-color: teal;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-    font-weight: bold;
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
 }
-.appliances-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 255px;
-    width: 225px;
-    background-color: teal;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-    font-weight: bold;
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #222;
 }
-.watch-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 250px;
-    width: 225px;
-    background-color: teal;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-    font-weight: bold;
+
+.card ul {
+    list-style: none;
+}
+
+.card li {
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.card li:hover {
+    padding-left: 8px;
+    color: #0077ff;
+}
+
+/* Food Color Accent */
+.food .card {
+    border-top: 5px solid #4CAF50;
+}
+
+/* Electronics Color Accent */
+.electronics .card {
+    border-top: 5px solid #0077ff;
+}
+
+/* Mobile Spacing */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
 }

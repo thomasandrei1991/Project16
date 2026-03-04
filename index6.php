@@ -16,6 +16,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index6.css">
         <title>Array Concept</title>
     </head>
@@ -23,92 +24,71 @@
         <nav>
             <h1>Shopping List</h1>
         </nav>
-        <div class="food-section">
-            <div class="food-container">
-                <div class="fruit-container">
-                    <h3>List of Fruits</h3>
+        <div class="section food">
+            <h2>Food Section</h2>
+            <div class="card-grid">
+
+                <div class="card">
+                    <h3>Fruits</h3>
                     <ul>
-                        <?php 
-                            foreach ($fruits as $fruit) {
-                                echo "<li>" . $fruit . "</li>";
-                            }
-                        ?>
+                        <?php foreach ($fruits as $fruit) echo "<li>$fruit</li>"; ?>
                     </ul>
                 </div>
-                <div class="vegetable-container">
-                    <h3>List of Vegetables</h3>
+
+                <div class="card">
+                    <h3>Vegetables</h3>
                     <ul>
-                        <?php 
-                            foreach ($vegetables as $vegetable) {
-                                echo "<li>" . $vegetable . "</li>";
-                            }
-                        ?>
+                        <?php foreach ($vegetables as $vegetable) echo "<li>$vegetable</li>"; ?>
                     </ul>
                 </div>
-                <div class="rootcrop-container">
-                    <h3>List of Rootcrops</h3>
+
+                <div class="card">
+                    <h3>Rootcrops</h3>
                     <ul>
-                        <?php 
-                            foreach ($rootcrops as $rootcrop) {
-                                echo "<li>" . $rootcrop . "</li>";
-                            }
-                        ?>
+                        <?php foreach ($rootcrops as $rootcrop) echo "<li>$rootcrop</li>"; ?>
                     </ul>
                 </div>
-                <div class="peanut-container">
-                    <h3>List of Peanuts</h3>
+
+                <div class="card">
+                    <h3>Peanuts</h3>
                     <ul>
-                        <?php 
-                            foreach ($peanuts as $peanut) {
-                                echo "<li>" . $peanut . "</li>";
-                            }
-                        ?>
+                        <?php foreach ($peanuts as $peanut) echo "<li>$peanut</li>"; ?>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="electronics-section">
-            <div class="gadget-container">
-                <div class="tv-container">
-                    <h3>List of TV</h3>
+        <div class="section electronics">
+            <h2>Electronics Section</h2>
+            <div class="card-grid">
+
+                <div class="card">
+                    <h3>TV</h3>
                     <ul>
-                        <?php 
-                            foreach ($tv as $television) {
-                                echo "<li>" . $television . "</li>";
-                            }
-                        ?>
+                        <?php foreach ($tv as $television) echo "<li>$television</li>"; ?>
                     </ul>
                 </div>
-                <div class="cellphone-container">
-                    <h3>List of Mobile Phones</h3>
+
+                <div class="card">
+                    <h3>Mobile Phones</h3>
                     <ul>
-                        <?php 
-                            foreach ($cellphones as $cellphone){
-                                echo "<li>" . $cellphone . "</li>";
-                            }
-                        ?>
+                        <?php foreach ($cellphones as $cellphone) echo "<li>$cellphone</li>"; ?>
                     </ul>
                 </div>
-                <div class="appliances-container">
-                    <h3>List of Appliances</h3>
+
+                <div class="card">
+                    <h3>Appliances</h3>
                     <ul>
-                        <?php 
-                            foreach ($appliances as $appliance) {
-                                echo "<li>" . $appliance . "</li>";
-                            }
-                        ?>
+                        <?php foreach ($appliances as $appliance) echo "<li>$appliance</li>"; ?>
                     </ul>
                 </div>
-                <div class="watch-container">
-                    <h3>List of Peanuts</h3>
+
+                <div class="card">
+                    <h3>Watches</h3>
                     <ul>
-                        <?php 
-                            foreach ($watches as $watch) {
-                                echo "<li>" . $watch . "</li>";
-                            }
-                        ?>
+                        <?php foreach ($watches as $watch) echo "<li>$watch</li>"; ?>
                     </ul>
                 </div>
+
             </div>
         </div>
     </body>
