@@ -13,7 +13,6 @@
             <button onclick="sendMessage()">Send</button>
         </div>
     </div>
-
         <script src="index8.js"></script>
     </body>
 </html>
